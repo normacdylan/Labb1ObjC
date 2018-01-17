@@ -23,19 +23,20 @@ int hiddenNumber;
     // Do any additional setup after loading the view.
     [self updateButtonText];
     [self updateHiddenNumber];
-    self.infoText.text = @"Gissa vilket det hemliga talet är.";
+    self.infoText.text = @"Vilket är det hemliga talet?";
 }
 
 - (IBAction)sliderChanged:(id)sender {
     [self updateButtonText];
 }
 - (IBAction)guessed:(id)sender {
-    if (self.slider.value < hiddenNumber)
+    int guess = (int) self.slider.value;
+    if (guess < hiddenNumber)
         self.infoText.text = @"För lågt! Gissa igen.";
-    else if (self.slider.value > hiddenNumber)
+    else if (guess > hiddenNumber)
         self.infoText.text = @"För högt! Gissa igen.";
     else {
-        self.infoText.text = @"Rätt! Gissa vilket det nya talet";
+        self.infoText.text = @"Rätt! Vilket är det nya hemliga talet?";
         [self updateHiddenNumber];
     }
 }

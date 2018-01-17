@@ -19,11 +19,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvc-ZH-yAy">
-                                <rect key="frame" x="147" y="345" width="80" height="60"/>
+                                <rect key="frame" x="147" y="438" width="80" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Gissa talet">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="ubp-ox-9xh" kind="show" id="uzp-eJ-Df0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iY2-8J-6wa">
+                                <rect key="frame" x="147" y="370" width="80" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Om mig">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3ga-Gz-Tzq" kind="show" id="WzM-ZG-Crb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJL-3F-e1Q">
+                                <rect key="frame" x="145" y="506" width="84" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Inställningar">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Xm6-kB-MkI" kind="show" id="fLw-4Q-BAi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -36,6 +58,21 @@
             </objects>
             <point key="canvasLocation" x="-46" y="111"/>
         </scene>
+        <!--Om mig-->
+        <scene sceneID="8M6-ef-dpT">
+            <objects>
+                <viewController title="Om mig" id="3ga-Gz-Tzq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="irU-W1-wTv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Xme-Jk-0jZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EUS-Gg-FWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="-566"/>
+        </scene>
         <!--Gissa talet-->
         <scene sceneID="bNx-OZ-uWJ">
             <objects>
@@ -45,14 +82,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJf-eK-uQ1">
-                                <rect key="frame" x="48" y="259" width="278" height="44"/>
+                                <rect key="frame" x="0.0" y="259" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="JcH-t4-62O">
-                                <rect key="frame" x="30" y="463" width="314" height="30"/>
+                                <rect key="frame" x="0.0" y="463" width="375" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="minimumTrackTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <connections>
@@ -85,6 +122,21 @@
                 <exit id="c5e-ej-OxR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="808.79999999999995" y="109.29535232383809"/>
+        </scene>
+        <!--Inställningar-->
+        <scene sceneID="bn9-Fa-Bgn">
+            <objects>
+                <viewController title="Inställningar" id="Xm6-kB-MkI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k9K-ey-gV2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="7Jy-Ep-mJY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HEl-V8-mpT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="835"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KMJ-VQ-jou">
