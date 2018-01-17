@@ -36,20 +36,55 @@
             </objects>
             <point key="canvasLocation" x="-46" y="111"/>
         </scene>
-        <!--Gissa numret-->
+        <!--Gissa talet-->
         <scene sceneID="bNx-OZ-uWJ">
             <objects>
-                <viewController title="Gissa numret" id="ubp-ox-9xh" sceneMemberID="viewController">
+                <viewController title="Gissa talet" id="ubp-ox-9xh" customClass="gissaTalet" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FgS-q2-Hwr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJf-eK-uQ1">
+                                <rect key="frame" x="48" y="259" width="278" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="JcH-t4-62O">
+                                <rect key="frame" x="30" y="463" width="314" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="ubp-ox-9xh" eventType="valueChanged" id="qyZ-3g-6Ge"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfE-0K-E4x">
+                                <rect key="frame" x="138" y="515" width="99" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Gissa">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessed:" destination="c5e-ej-OxR" eventType="touchUpInside" id="N8a-T9-8qt"/>
+                                    <action selector="guessed:" destination="ubp-ox-9xh" eventType="touchUpInside" id="uNh-6A-ha2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="qYl-bx-nWu"/>
                     </view>
+                    <connections>
+                        <outlet property="guessButton" destination="sfE-0K-E4x" id="bvT-Br-MYe"/>
+                        <outlet property="infoText" destination="aJf-eK-uQ1" id="lUW-KC-00t"/>
+                        <outlet property="slider" destination="JcH-t4-62O" id="ef9-cZ-TI5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wKp-c5-dEK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="c5e-ej-OxR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1452" y="117.39130434782609"/>
+            <point key="canvasLocation" x="808.79999999999995" y="109.29535232383809"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KMJ-VQ-jou">
