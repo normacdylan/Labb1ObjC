@@ -24,6 +24,7 @@ int hiddenNumber;
     [self updateButtonText];
     [self updateHiddenNumber];
     self.infoText.text = @"Vilket är det hemliga talet?";
+    [self loadColor];
 }
 
 - (IBAction)sliderChanged:(id)sender {
@@ -50,6 +51,14 @@ int hiddenNumber;
     NSString *value = [NSString stringWithFormat:@"%d",rounded];
     NSString *message = [value stringByAppendingString:@"?"];
     [self.guessButton setTitle:message forState:UIControlStateNormal];
+}
+
+- (void) loadColor {
+    NSUserDefaults *settings = [NSUserDefaults standardUserDefaults];
+    if ([settings integerForKey:@"Color"]==0)
+        self.view.backgroundColor = [UIColor darkGrayColor];
+    else
+        self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {

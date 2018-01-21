@@ -15,6 +15,7 @@
 		724A0B46200E1C9A00D73287 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 724A0B45200E1C9A00D73287 /* main.m */; };
 		724A0B51200F3A2A00D73287 /* gissaTalet.m in Sources */ = {isa = PBXBuildFile; fileRef = 724A0B50200F3A2A00D73287 /* gissaTalet.m */; };
 		724A0B54200F584B00D73287 /* inställningarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724A0B53200F584B00D73287 /* inställningarViewController.m */; };
+		724A0BCA2014EC1000D73287 /* OmMigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724A0BC92014EC1000D73287 /* OmMigViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		724A0B50200F3A2A00D73287 /* gissaTalet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gissaTalet.m; sourceTree = "<group>"; };
 		724A0B52200F584B00D73287 /* inställningarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "inställningarViewController.h"; sourceTree = "<group>"; };
 		724A0B53200F584B00D73287 /* inställningarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "inställningarViewController.m"; sourceTree = "<group>"; };
+		724A0BC82014EC1000D73287 /* OmMigViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OmMigViewController.h; sourceTree = "<group>"; };
+		724A0BC92014EC1000D73287 /* OmMigViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OmMigViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				724A0B50200F3A2A00D73287 /* gissaTalet.m */,
 				724A0B52200F584B00D73287 /* inställningarViewController.h */,
 				724A0B53200F584B00D73287 /* inställningarViewController.m */,
+				724A0BC82014EC1000D73287 /* OmMigViewController.h */,
+				724A0BC92014EC1000D73287 /* OmMigViewController.m */,
 			);
 			path = AugustPosnerLabb1;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				724A0B3B200E1C9A00D73287 /* ViewController.m in Sources */,
 				724A0B46200E1C9A00D73287 /* main.m in Sources */,
 				724A0B54200F584B00D73287 /* inställningarViewController.m in Sources */,
+				724A0BCA2014EC1000D73287 /* OmMigViewController.m in Sources */,
 				724A0B38200E1C9A00D73287 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

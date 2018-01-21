@@ -20,7 +20,17 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void) viewWillAppear:(BOOL)animated {
+    [self loadColor];
+}
 
+- (void) loadColor {
+    NSUserDefaults *settings = [NSUserDefaults standardUserDefaults];
+    if ([settings integerForKey:@"Color"]==0)
+        self.view.backgroundColor = [UIColor darkGrayColor];
+    else
+        self.view.backgroundColor = [UIColor whiteColor];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
