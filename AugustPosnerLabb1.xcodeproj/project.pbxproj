@@ -14,6 +14,7 @@
 		724A0B43200E1C9A00D73287 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724A0B41200E1C9A00D73287 /* LaunchScreen.storyboard */; };
 		724A0B46200E1C9A00D73287 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 724A0B45200E1C9A00D73287 /* main.m */; };
 		724A0B51200F3A2A00D73287 /* gissaTalet.m in Sources */ = {isa = PBXBuildFile; fileRef = 724A0B50200F3A2A00D73287 /* gissaTalet.m */; };
+		724A0B54200F584B00D73287 /* inställningarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724A0B53200F584B00D73287 /* inställningarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		724A0B45200E1C9A00D73287 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		724A0B4F200F3A2A00D73287 /* gissaTalet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gissaTalet.h; sourceTree = "<group>"; };
 		724A0B50200F3A2A00D73287 /* gissaTalet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gissaTalet.m; sourceTree = "<group>"; };
+		724A0B52200F584B00D73287 /* inställningarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "inställningarViewController.h"; sourceTree = "<group>"; };
+		724A0B53200F584B00D73287 /* inställningarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "inställningarViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				724A0B45200E1C9A00D73287 /* main.m */,
 				724A0B4F200F3A2A00D73287 /* gissaTalet.h */,
 				724A0B50200F3A2A00D73287 /* gissaTalet.m */,
+				724A0B52200F584B00D73287 /* inställningarViewController.h */,
+				724A0B53200F584B00D73287 /* inställningarViewController.m */,
 			);
 			path = AugustPosnerLabb1;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 				724A0B51200F3A2A00D73287 /* gissaTalet.m in Sources */,
 				724A0B3B200E1C9A00D73287 /* ViewController.m in Sources */,
 				724A0B46200E1C9A00D73287 /* main.m in Sources */,
+				724A0B54200F584B00D73287 /* inställningarViewController.m in Sources */,
 				724A0B38200E1C9A00D73287 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

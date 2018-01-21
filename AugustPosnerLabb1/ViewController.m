@@ -9,8 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
-
+@property (nonatomic) NSUserDefaults *settings;
 
 @end
 
