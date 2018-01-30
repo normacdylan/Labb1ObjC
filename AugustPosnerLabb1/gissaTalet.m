@@ -9,8 +9,8 @@
 #import "gissaTalet.h"
 
 @interface gissaTalet ()
-@property (weak, nonatomic) IBOutlet UIButton *guessButton;
 @property (weak, nonatomic) IBOutlet UILabel *infoText;
+@property (weak, nonatomic) IBOutlet UILabel *sliderValueText;
 @property (weak, nonatomic) IBOutlet UISlider *slider;
 @end
 
@@ -21,16 +21,13 @@ int hiddenNumber;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self updateButtonText];
+    [self updateValueText];
     [self updateHiddenNumber];
     self.infoText.text = @"Vilket är det hemliga talet?";
     [self loadColor];
 }
 
 - (IBAction)sliderChanged:(id)sender {
-    [self updateButtonText];
-}
-- (IBAction)guessed:(id)sender {
     int guess = (int) self.slider.value;
     if (guess < hiddenNumber)
         self.infoText.text = @"För lågt! Gissa igen.";
@@ -40,17 +37,18 @@ int hiddenNumber;
         self.infoText.text = @"Rätt! Vilket är det nya hemliga talet?";
         [self updateHiddenNumber];
     }
+    [self updateValueText];
 }
+
 
 - (void) updateHiddenNumber {
     hiddenNumber = arc4random_uniform(101);
 }
 
-- (void) updateButtonText {
+- (void) updateValueText {
     int rounded = (int) self.slider.value;
     NSString *value = [NSString stringWithFormat:@"%d",rounded];
-    NSString *message = [value stringByAppendingString:@"?"];
-    [self.guessButton setTitle:message forState:UIControlStateNormal];
+    self.sliderValueText.text = value;
 }
 
 - (void) loadColor {
