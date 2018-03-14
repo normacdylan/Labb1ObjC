@@ -28,6 +28,9 @@ int hiddenNumber;
 }
 
 - (IBAction)sliderChanged:(id)sender {
+    [self updateValueText];
+}
+- (IBAction)guess:(id)sender {
     int guess = (int) self.slider.value;
     if (guess < hiddenNumber)
         self.infoText.text = @"För lågt! Gissa igen.";
@@ -37,7 +40,6 @@ int hiddenNumber;
         self.infoText.text = @"Rätt! Vilket är det nya hemliga talet?";
         [self updateHiddenNumber];
     }
-    [self updateValueText];
 }
 
 
